@@ -1,0 +1,22 @@
+type Country {
+  Name: String
+  Alpha2Code: String
+  Alpha3Code: String
+  NativeName: String
+  Region: String
+  SubRegion: String
+  Latitude: String
+  Longitude: String
+  Area: Int
+  NumericCode: Int
+  NativeLanguage: String
+  CurrencyCode: String
+  CurrencyName: String
+  CurrencySymbol: String
+  Flag: String
+  FlagPng: String
+}
+
+type Query {
+  countries(name: String, region: String, currencyCode: String): [Country]
+}
